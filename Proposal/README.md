@@ -35,7 +35,7 @@ Sample API response data for a user:
     "hardiness_zone": "8a",
     "created_at": "2023-02-01 06:10:25",
     "last_login_at": "2023-02-03 10:24:02",
-    "gardens": [...]
+    "gardens": []
   }
 }
 ```
@@ -51,10 +51,10 @@ Sample API response data for a plant:
     "description": "The habanero is a hot variety of chili. Unripe habaneros are green, and they color as they mature.The most common color variants are orange and red, but the fruit may also be white, brown, yellow, green, or purple. Typically, a ripe habanero is 2–6 centimeters (3⁄4–2+1⁄4 inches) long. Habanero chilis are very hot, rated 100,000–350,000 on the Scoville scale. The habanero's heat, flavor and floral aroma make it a popular ingredient in hot sauces and other spicy foods.",
     "days_to_maturity": "90",
     "instructions": {
-      "planting": {...},
-      "pruning": {...},
-      "watering": {...},
-      "pest_control": {...}
+      "planting": {},
+      "pruning": {},
+      "watering": {},
+      "pest_control": {}
     }
   }
 }
@@ -101,40 +101,41 @@ This app will make use of the **WeatherAPI** in order to help the user properly 
 Sample API response data for a daily forcast:
 
 ```json
-{"forecast": {
-        "forecastday": [
-            {
-                "date": "2023-02-03",
-                "date_epoch": 1675382400,
-                "day": {
-                    "maxtemp_c": 14.1,
-                    "maxtemp_f": 57.4, // will use maxtemp_f to check if user should be alerted to water their plants and/or use shade cloth to protect plants from burning
-                    "mintemp_c": 4.3,
-                    "mintemp_f": 39.7, // will use mintemp_f to check if user should be alerted to protect their plants from frost
-                    "avgtemp_c": 9.0,
-                    "avgtemp_f": 48.2,
-                    "maxwind_mph": 11.9,
-                    "maxwind_kph": 19.1,
-                    "totalprecip_mm": 13.7,
-                    "totalprecip_in": 0.54, // will use totalprecip_in along with maxtemp_f to check if user should be alerted to water their plants or not
-                    "totalsnow_cm": 0.0,
-                    "avgvis_km": 9.4,
-                    "avgvis_miles": 5.0,
-                    "avghumidity": 67.0,
-                    "daily_will_it_rain": 1,
-                    "daily_chance_of_rain": 88,
-                    "daily_will_it_snow": 0,
-                    "daily_chance_of_snow": 0,
-                    "condition": {
-                        "text": "Moderate rain",
-                        "icon": "//cdn.weatherapi.com/weather/64x64/day/302.png",
-                        "code": 1189
-                    },
-                    "uv": 2.0
-                },
-            },...
-         ]
-   }
+{
+  "forecast": {
+    "forecastday": [
+      {
+        "date": "2023-02-03",
+        "date_epoch": 1675382400,
+        "day": {
+          "maxtemp_c": 14.1,
+          "maxtemp_f": 57.4, // will use maxtemp_f to check if user should be alerted to water their plants and/or use shade cloth to protect plants from burning
+          "mintemp_c": 4.3,
+          "mintemp_f": 39.7, // will use mintemp_f to check if user should be alerted to protect their plants from frost
+          "avgtemp_c": 9.0,
+          "avgtemp_f": 48.2,
+          "maxwind_mph": 11.9,
+          "maxwind_kph": 19.1,
+          "totalprecip_mm": 13.7,
+          "totalprecip_in": 0.54, // will use totalprecip_in along with maxtemp_f to check if user should be alerted to water their plants or not
+          "totalsnow_cm": 0.0,
+          "avgvis_km": 9.4,
+          "avgvis_miles": 5.0,
+          "avghumidity": 67.0,
+          "daily_will_it_rain": 1,
+          "daily_chance_of_rain": 88,
+          "daily_will_it_snow": 0,
+          "daily_chance_of_snow": 0,
+          "condition": {
+            "text": "Moderate rain",
+            "icon": "//cdn.weatherapi.com/weather/64x64/day/302.png",
+            "code": 1189
+          },
+          "uv": 2.0
+        }
+      }
+    ]
+  }
 }
 ```
 
@@ -187,7 +188,7 @@ Database models will consist of the following:
 
 ### **User Flows**
 
-User.....
+User..
 ![user flow diagram]() - Coming Soon
 
 ### **Stretch Goals**
