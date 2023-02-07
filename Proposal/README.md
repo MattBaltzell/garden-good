@@ -45,16 +45,19 @@ Sample API response data for a plant:
 ```json
 {
   "plant": {
-    "id": "23",
-    "name": "Habanero",
-    "species": "Capsicum chinense",
-    "description": "The habanero is a hot variety of chili. Unripe habaneros are green, and they color as they mature.The most common color variants are orange and red, but the fruit may also be white, brown, yellow, green, or purple. Typically, a ripe habanero is 2–6 centimeters (3⁄4–2+1⁄4 inches) long. Habanero chilis are very hot, rated 100,000–350,000 on the Scoville scale. The habanero's heat, flavor and floral aroma make it a popular ingredient in hot sauces and other spicy foods.",
-    "days_to_maturity": "90",
+    "id": "1",
+    "name": "Jalapeno",
+    "species": "Capsicum annuum",
+    "img_url": "https://gardengood.com/api/img/jalapeno.jpg",
+    "light_id": "0",
+    "is_perrenial": "false",
+    "description": "Named for the town of Jalapa, Mexico, this is the most popular chile pepper in the United States. Jalapeño produces 3-inch, thick-walled, moderately hot pods with deep green color that matures to a bright red. The skin may show a netting pattern as fruit ages, but it does not affect flavor. Often, the heat of the peppers will vary, even those from the same plant. If peppers grow fast, get plenty of water, and are harvested soon, they may be milder than peppers that stay on the plant a long time, or that develop slowly and under stressful conditions. Widely adapted, jalapeño plants yield a bountiful harvest in dry or humid, hot or cool climates. The compact plants grow well in containers. Use jalapeño on nachos or in salsa, or smoke the mature red ones over mesquite chips to make your own chipotle sauce. Jalapeño became the first pepper in space when a bag full of pods accompanied astronauts on the shuttle Columbia in November 1982!",
+    "days_to_maturity_min": "75",
+    "days_to_maturity_max": "80",
     "instructions": {
-      "planting": {},
-      "pruning": {},
-      "watering": {},
-      "pest_control": {}
+      "planting": "Start seeds indoors 6-8 weeks before outdoor planting time for earliest harvest. Grow in sunny window. Transplant outdoors to a sunny location when seedlings have 5-6 leaves. In mild climates, may be sown directly in the garden.",
+      "pruning": "Top young plants to encourage sturdier bush growth. Throughout the summer, you can optionally remove some suckers to prevent too much horizontal growth. Late in the season, prune plants heavily by cutting all shoots and side branches back by about six inches, or to a point just above the topmost fruit. Remove branches that do not hold any fruits. Finally, remove any flowers you see on the plant as well as small fruits that do not have time to ripen before the first frost.",
+      "watering": "Jalapeño plants need lots of water. You should keep the soil very moist at all times. Note that dry soil can give the fruits a bitter flavor; however, you should also avoid over-saturating the soil as this could cause fungal diseases and root rot."
     }
   }
 }
@@ -65,30 +68,13 @@ Sample API response data for a crop:
 ```json
 {
   "crop": {
-    "plant_id": "23",
-    "name": "Habanero", //query res of `SELECT name FROM plants WHERE id = $1, [plant_id]`
-    "img_url": "https://gardengood.com/api/img/habanero.jpg", //query res of `SELECT img_url FROM plants WHERE id = $1, [plant_id]`
+    "plant_id": "1",
+    "name": "Jalapeno", //query res of `SELECT name FROM plants WHERE id = $1, [plant_id]`
+    "img_url": "https://gardengood.com/api/img/jalapeno.jpg", //query res of `SELECT img_url FROM plants WHERE id = $1, [plant_id]`
     "bed_id": "7",
     "qty": "2",
-    "planted_at": "2023-02-01 06:10:25",
-    "notes": "Grew extremely well this year due to being placed in the middle of the garden. 40% more yeild than last year!"
+    "planted_at": "2023-02-01 06:10:25"
   }
-}
-```
-
-### **Plant Hardiness Zone API**
-
-https://rapidapi.com/fireside-worldwide-fireside-worldwide-default/api/plant-hardiness-zone
-
-This app will use the **Plant Hardiness Zone API** in order to determine the hardiness zone in which the user resides. The app will then use this information to provide the user with the correct planting and care instructions for their hardiness zone.
-
-Sample API response data:
-
-```json
-// GET request made with zipcode:"90210"
-{
-"hardiness_zone":"10b"
-"zipcode":"90210"
 }
 ```
 
@@ -96,7 +82,7 @@ Sample API response data:
 
 https://www.weatherapi.com/
 
-This app will make use of the **WeatherAPI** in order to help the user properly care for their plants during various weather conditions such as extreme heat, freezes, and precipitation.
+This app will make use of the **WeatherAPI** in order to help the user properly care for their plants during various weather conditions such as extreme heat, freezes, and precipitation. This API can also be used to display current weather conditions in a user's home page or nav bar.
 
 Sample API response data for a daily forcast:
 
@@ -139,11 +125,27 @@ Sample API response data for a daily forcast:
 }
 ```
 
+### **Plant Hardiness Zone API**
+
+https://rapidapi.com/fireside-worldwide-fireside-worldwide-default/api/plant-hardiness-zone
+
+This app will use the **Plant Hardiness Zone API** in order to determine the hardiness zone in which the user resides. Stretch goal: The app will then use this information to provide the user with the correct planting and care instructions for their hardiness zone.
+
+Sample API response data:
+
+```json
+// GET request made with zipcode:"90210"
+{
+"hardiness_zone":"10b"
+"zipcode":"90210"
+}
+```
+
 ---
 
 ## Project Approach
 
-My approach for creating the Garden Good App will be to develop an MVP that allows the User to look up information about a Plant. For this there should be a 'plants' page that shows all plants. The user should be able to click on plant to reveal information about it. The user should also be able to search for a plant by name. Once this feature is implemented, I will add a feature allowing Users digitally build out their gardens. They will be able to create Garden components, add Bed components to those Gardens, and add Crop componens to those Beds.
+My approach for creating the Garden Good App will be to develop an MVP that allows the User to look up information about a Plant. For this there should be a 'plants' page that shows all plants. The user should be able to click on plant to reveal information about it. The user should also be able to search for a plant by name. Once this feature is implemented, I will add current weather data to the interface. I will also add a feature that allows Users to digitally build out their gardens. They will be able to create Garden components, add Bed components to those Gardens, and add Crop componens to those Beds.
 
 ### **Database Schema**
 
@@ -162,10 +164,10 @@ Database models will consist of the following:
 
 ### **Potential Issues**
 
-1. In the event that the Plant Hardiness Zone API goes down, a new user should be able to manually choose a hardiness zone.
+1. If the WeatherAPI is down, the user will not receive weather-related care alerts until the API is running again.
+2. In the event that the Plant Hardiness Zone API goes down, a new user should be able to manually choose a hardiness zone.
    When a hardiness zone is set manually, there should be a state such as "hasManualHardinessZone" that will trigger the Hardiness Zone API to reset the user's hardiness zone during the next login.
    Since the registration process will require the user's zip code, the API will be able to properly set the user's hardiness zone and set "hasManualHardinessZone" to false.
-2. If the WeatherAPI is down, the user will not receive weather-related care alerts until the API is running again.
 
 ### **Security & Sensitive Information**
 
@@ -189,11 +191,13 @@ Database models will consist of the following:
 ### **User Flows**
 
 User..
-![user flow diagram]() - Coming Soon
+![user flow diagram](./img/GardenGood_user-flow.png) - Coming Soon
 
 ### **Stretch Goals**
 
-1. Add common garden pest and pest control data
-2. Add common preserving techniques for each veggie
-3. Add bed building techniques to help new gardeners get started (tips like leave room to walk and dont make the bed bigger than you can reach) maybe this can have a user add feature where people can suggest ideas and share experiences
-4. Building plans for different types of garden beds
+1. Add feature for users to add notes to their crops.
+2. Add planting dates to plants. This should use the Hardiness Zone API to select the correct option from a list of date ranges.
+3. Add common garden pest and pest control data
+4. Add common preserving techniques for each veggie
+5. Add bed building techniques to help new gardeners get started (tips like leave room to walk and dont make the bed bigger than you can reach) maybe this can have a user add feature where people can suggest ideas and share experiences
+6. Building plans for different types of garden beds
