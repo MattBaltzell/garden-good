@@ -2,6 +2,8 @@
 
 # **Garden Good App**
 
+![GardenGood](./img/gg_logo.png)
+
 Starting a new garden or maintaining a loved garden can be a bit overwhelming. Keeping track of your plants' varying needs essentially requires a personal assistant. Wouldn’t it be great if there was a way to handle it all yourself and have a bountiful harvest?
 
 ---
