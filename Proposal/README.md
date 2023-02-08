@@ -2,7 +2,9 @@
 
 # **Garden Good App**
 
-In an attempt to provide their wallets some relief from the rising grocery prices, many people have created small vegetable garden's in their yards. Unfortunately, these gardeners do not have adequate knowledge to optimize their harvest. So, they miss out on a lot of great veg. If only there was a tool they could use to maximize their garden's output...
+Starting a new garden or maintaining a loved garden can be a bit overwhelming. Keeping track of your plants' varying needs essentially requires a personal assistant. Wouldn’t it be great if there was a way to handle it all yourself and have a bountiful harvest?
+
+---
 
 ## Project Goals
 
