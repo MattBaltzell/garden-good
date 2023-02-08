@@ -6,7 +6,7 @@ In an attempt to provide their wallets some relief from the rising grocery price
 
 ## Project Goals
 
-The Garden Good app helps beginning gardeners and experienced gardeners plan, plant, and tend their crops for an abudant harvest. This app incorporates planting zones and proper timing for sowing, growth and tending information, as well as weather alerts to help your garden thrive. From proper feeding and watering to pruning and pests, this app will help you garden GOOD.
+The Garden Good app helps beginning gardeners and experienced gardeners plan, plant, and tend their crops for an abudant harvest. This app incorporates weather alerts to help you protect your garden from harsh conditions, and allow it to thrive. From proper feeding and watering to pruning and pests, this app will help you garden GOOD.
 
 ---
 
@@ -129,7 +129,7 @@ Sample API response data for a daily forcast:
 
 https://rapidapi.com/fireside-worldwide-fireside-worldwide-default/api/plant-hardiness-zone
 
-This app will use the **Plant Hardiness Zone API** in order to determine the hardiness zone in which the user resides. Stretch goal: The app will then use this information to provide the user with the correct planting and care instructions for their hardiness zone.
+This app will use the **Plant Hardiness Zone API** in order to determine the hardiness zone in which the user resides. FUTURE: The app will use this information to provide the user with the correct planting dates for their hardiness zone.
 
 Sample API response data:
 
@@ -140,36 +140,6 @@ Sample API response data:
 "zipcode":"90210"
 }
 ```
-
----
-
-## Timeline
-
-| **FEATURE**            	| 2/13 	| 2/14 	| 2/15 	| 2/16 	| 2/17 	| 2/18 	| 2/19 	| 2/20 	| 2/21 	| 2/22 	| 2/23 	| 2/24 	| 2/25 	| 2/26 	| 2/27 	| 2/28 	| 3/1 	|   	|   	|
-|------------------------	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:---:	|:-:	|:-:	|
-| **Plant Information**  	|   x  	|   x  	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
-| - Backend Routes       	|   x  	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
-| - API                  	|   x  	|   x  	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
-| - Frontend             	|      	|      	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
-| **User Auth**          	|      	|      	|      	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
-| - Backend Routes       	|      	|      	|      	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
-| - API                  	|      	|      	|      	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
-| -Frontend              	|      	|      	|      	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
-| **Gardens**            	|      	|      	|      	|      	|   x  	|   x  	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
-| - Backend Routes       	|      	|      	|      	|      	|   x  	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
-| - API                  	|      	|      	|      	|      	|      	|      	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
-| - Frontend             	|      	|      	|      	|      	|      	|      	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
-| **Beds**               	|      	|      	|      	|      	|      	|      	|      	| x    	| x    	| x    	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
-| - Backend Routes       	|      	|      	|      	|      	|      	|      	|      	| x    	| x    	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
-| - API                  	|      	|      	|      	|      	|      	|      	|      	|      	|      	| x    	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
-| - Frontend             	|      	|      	|      	|      	|      	|      	|      	|      	|      	| x    	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
-| **Crops**              	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	| x    	| x    	| x    	|      	|      	|      	|     	|   	|   	|
-| - Backend Routes       	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	| x    	| x    	|      	|      	|      	|      	|     	|   	|   	|
-| - API                  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	| x    	|      	|      	|      	|     	|   	|   	|
-| - Frontend             	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	| x    	|      	|      	|      	|     	|   	|   	|
-| **Navigation/Routing** 	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|   x  	|      	|      	|     	|   	|   	|
-| - Frontend             	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|   x  	|      	|      	|     	|   	|   	|
-|                        	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
 
 ---
 
@@ -229,8 +199,35 @@ User Flow - Add Crop to Bed
 ### **Stretch Goals**
 
 1. Add feature for users to add notes to their crops.
-2. Add planting dates to plants. This should use the Hardiness Zone API to select the correct option from a list of date ranges.
-3. Add common garden pest and pest control data
-4. Add common preserving techniques for each veggie
-5. Add bed building techniques to help new gardeners get started (tips like leave room to walk and dont make the bed bigger than you can reach) maybe this can have a user add feature where people can suggest ideas and share experiences
-6. Building plans for different types of garden beds
+2. Add feature for extreme weather alerts.
+3. Add feature for common garden pest and pest control data.
+
+---
+
+## Proposed Timeline
+
+| **FEATURE**                              | 2/13  | 2/14  | 2/15  | 2/16  | 2/17  | 2/18  | 2/19  | 2/20  | 2/21  | 2/22  | 2/23  | 2/24  | 2/25  | 2/26  | 2/27  | 2/28  |  3/1  |  3/2  |  3/3  |  3/4  |  3/5  |  3/6  |
+| ---------------------------------------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Plant Info**                           | **x** | **x** | **x** | **x** |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| - Backend                                |   x   |   x   |   x   |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| - Frontend                               |       |       |   x   |   x   |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| **User Auth**                            |       |       |       | **x** | **x** |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| - Backend / Middleware                   |       |       |       |   x   |   x   |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| - Frontend                               |       |       |       |       |   x   |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| **Current Weather**                      |       |       |       |       |       | **x** | **x** |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| - Backend                                |       |       |       |       |       |   x   |   x   |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| - Frontend                               |       |       |       |       |       |       |   x   |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
+| **My Gardens, Beds, Crops**              |       |       |       |       |       |       |       | **x** | **x** | **x** | **x** | **x** | **x** |       |       |       |       |       |       |       |       |       |
+| - Backend                                |       |       |       |       |       |       |       |   x   |   x   |   x   |   x   |       |       |       |       |       |       |       |       |       |       |       |
+| - Frontend                               |       |       |       |       |       |       |       |       |       |   x   |   x   |   x   |   x   |       |       |       |       |       |       |       |       |       |
+| **FE Navigation/Routing**                |       |       |       |       |       |       |       |       |       |       |       |       |       | **x** | **x** |       |       |       |       |       |       |       |
+| - Frontend                               |       |       |       |       |       |       |       |       |       |       |       |       |       |   x   |   x   |       |       |       |       |       |       |       |
+| **Stretch Goal: Add Notes to Crops**     |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       | **x** | **x** |       |       |       |       |       |
+| - Backend                                |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |   x   |   x   |       |       |       |       |       |
+| - Frontend                               |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |   x   |       |       |       |       |       |
+| **Stretch Goal: Extreme Weather Alerts** |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       | **x** | **x** |       |       |       |
+| - Backend                                |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |   x   |   x   |       |       |       |
+| - Frontend                               |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |   x   |       |       |       |
+| **Stretch Goal: Pest Control Info**      |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       | **x** | **x** | **x** |
+| - Backend                                |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |   x   |   x   |   x   |
+| - Frontend                               |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |   x   |   x   |
