@@ -190,8 +190,8 @@ Database models will consist of the following:
 
 ### **User Flows**
 
-User..
-![user flow diagram](./img/GardenGood_user-flow.png) - Coming Soon
+User Flow - Find a Plant
+![user flow - find a plant](./img/gg_user-flow_find-plant.png)
 
 ### **Stretch Goals**
 
