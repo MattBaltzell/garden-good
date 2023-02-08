@@ -143,6 +143,36 @@ Sample API response data:
 
 ---
 
+## Timeline
+
+| **FEATURE**            	| 2/13 	| 2/14 	| 2/15 	| 2/16 	| 2/17 	| 2/18 	| 2/19 	| 2/20 	| 2/21 	| 2/22 	| 2/23 	| 2/24 	| 2/25 	| 2/26 	| 2/27 	| 2/28 	| 3/1 	|   	|   	|
+|------------------------	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:----:	|:---:	|:-:	|:-:	|
+| **Plant Information**  	|   x  	|   x  	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
+| - Backend Routes       	|   x  	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
+| - API                  	|   x  	|   x  	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
+| - Frontend             	|      	|      	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
+| **User Auth**          	|      	|      	|      	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
+| - Backend Routes       	|      	|      	|      	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
+| - API                  	|      	|      	|      	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
+| -Frontend              	|      	|      	|      	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
+| **Gardens**            	|      	|      	|      	|      	|   x  	|   x  	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
+| - Backend Routes       	|      	|      	|      	|      	|   x  	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
+| - API                  	|      	|      	|      	|      	|      	|      	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
+| - Frontend             	|      	|      	|      	|      	|      	|      	|   x  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
+| **Beds**               	|      	|      	|      	|      	|      	|      	|      	| x    	| x    	| x    	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
+| - Backend Routes       	|      	|      	|      	|      	|      	|      	|      	| x    	| x    	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
+| - API                  	|      	|      	|      	|      	|      	|      	|      	|      	|      	| x    	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
+| - Frontend             	|      	|      	|      	|      	|      	|      	|      	|      	|      	| x    	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
+| **Crops**              	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	| x    	| x    	| x    	|      	|      	|      	|     	|   	|   	|
+| - Backend Routes       	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	| x    	| x    	|      	|      	|      	|      	|     	|   	|   	|
+| - API                  	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	| x    	|      	|      	|      	|     	|   	|   	|
+| - Frontend             	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	| x    	|      	|      	|      	|     	|   	|   	|
+| **Navigation/Routing** 	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|   x  	|      	|      	|     	|   	|   	|
+| - Frontend             	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|   x  	|      	|      	|     	|   	|   	|
+|                        	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|      	|     	|   	|   	|
+
+---
+
 ## Project Approach
 
 My approach for creating the Garden Good App will be to develop an MVP that allows the User to look up information about a Plant. For this there should be a 'plants' page that shows all plants. The user should be able to click on plant to reveal information about it. The user should also be able to search for a plant by name. Once this feature is implemented, I will add current weather data to the interface. I will also add a feature that allows Users to digitally build out their gardens. They will be able to create Garden components, add Bed components to those Gardens, and add Crop componens to those Beds.
@@ -190,8 +220,11 @@ Database models will consist of the following:
 
 ### **User Flows**
 
-User Flow - Find a Plant
+User Flow - Find Plant Info
 ![user flow - find a plant](./img/gg_user-flow_find-plant.png)
+
+User Flow - Add Crop to Bed
+![user flow - add a crop](./img/gg_user-flow_add-crop.png)
 
 ### **Stretch Goals**
 
