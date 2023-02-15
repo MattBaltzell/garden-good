@@ -149,7 +149,14 @@ Sample API response data:
 
 ## Project Approach
 
-My approach for creating the Garden Good App will be to develop an MVP that allows the User to look up information about a Plant. For this there should be a 'plants' page that shows all plants. The user should be able to click on plant to reveal information about it. The user should also be able to search for a plant by name. Once this feature is implemented, I will add current weather data to the interface. I will also add a feature that allows Users to digitally build out their gardens. They will be able to create Garden components, add Bed components to those Gardens, and add Crop componens to those Beds.
+My approach for creating the Garden Good app will be to develop an MVP that allows the User to look up information about a Plant. For this there should be a 'plants' page that shows all plants. The user should be able to click on plant to reveal information about it. The user should also be able to search for a plant by name. Once this feature is implemented, I will add current weather data to the interface. I will also add a feature that allows Users to digitally build out their gardens. They will be able to create Garden components, add Bed components to those Gardens, and add Crop componens to those Beds.
+
+### **Technology Stack**
+
+- PostgreSQL
+- Express
+- React
+- Node
 
 ### **Database Schema**
 
