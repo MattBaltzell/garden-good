@@ -1,3 +1,6 @@
 [submodule "gardengood-backend"]
 	path = gardengood-backend
 	url = https://github.com/MattBaltzell/gardengood-backend.git
+[submodule "gardengood-frontend"]
+	path = gardengood-frontend
+	url = https://github.com/MattBaltzell/gardengood-frontend.git
