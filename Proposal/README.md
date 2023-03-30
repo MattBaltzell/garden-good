@@ -167,9 +167,11 @@ Database models will consist of the following:
 - Bed
 - Crop
 - Plant
+- Sunlight
+- Season
 - Instruction
 - Instruction_Type
-- Hardiness_Zone
+- Note
 
 ![database schema](./img/GardenGood_db-schema.png)
 
@@ -191,8 +193,7 @@ Database models will consist of the following:
 **Plant Care**
 
 - Search for plant
-- General plant data
-- Plant care instructions adjusted for User hardiness zone
+- General plant data and care instructions
 
 **My Garden:**
 
@@ -209,15 +210,16 @@ User Flow - Add Crop to Bed
 
 ### **Stretch Goals**
 
-1. Add feature for users to add notes to their crops.
-2. Add feature for extreme weather alerts.
-3. Add feature for common garden pest and pest control data.
+1. My Garden Feature
+2. Add feature for users to add notes to their crops.
+3. Add feature for extreme weather alerts.
+4. Add feature for common garden pest and pest control data.
 
 ---
 
 ## Proposed Timeline
 
-| **FEATURE**                              | 2/20  | 2/21  | 2/22  | 2/23  | 2/24  | 2/25  | 2/26  | 2/27  | 2/28  | 3/1  | 3/2  | 3/3  | 3/4  | 3/5  | 3/6  | 3/7  |  3/8  |  3/9  |  3/10  |  3/11 |  3/12  |  3/13  |
+| **FEATURE**                              | 2/20  | 2/21  | 2/22  | 2/23  | 2/24  | 2/25  | 2/26  | 2/27  | 2/28  |  3/1  |  3/2  |  3/3  |  3/4  |  3/5  |  3/6  |  3/7  |  3/8  |  3/9  | 3/10  | 3/11  | 3/12  | 3/13  |
 | ---------------------------------------- | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Plant Info**                           | **x** | **x** | **x** | **x** |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
 | - Backend                                |   x   |   x   |   x   |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |       |
