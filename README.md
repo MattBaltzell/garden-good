@@ -4,7 +4,7 @@
 
 _Helping gardeners plan, plant, and tend their crops for a thriving garden._
 
-![GardenGood](./Proposal/img/gg_logo.png)
+![GardenGood](./Proposal/img/gg-homepage.PNG)
 
 <!-- b. Describe what your website does -->
 
