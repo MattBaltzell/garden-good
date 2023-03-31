@@ -1,12 +1,8 @@
-<!-- a. The title of your site and a link to the URL where it is deployed -->
-
 # **GardenGood App**
 
 _Helping gardeners plan, plant, and tend their crops for a thriving garden._
 
 ![GardenGood](./Proposal/img/gg-homepage.PNG)
-
-<!-- b. Describe what your website does -->
 
 The Garden Good app helps beginner and experienced gardeners plan, plant, and tend their crops for an abudant harvest. This app incorporates weather alerts to help you protect your garden from harsh conditions, and allow it to thrive. From proper feeding and watering to pruning, this app will help you garden GOOD.
 
@@ -15,8 +11,6 @@ I created the simplest form of this application during my time in Springboard's 
 Live link: https://gardengood.surge.sh/
 
 ---
-
-<!-- c. List the features you implemented and explain why you chose those features to implement -->
 
 ## Features
 
@@ -31,8 +25,6 @@ Weather conditions are important for gardeners to properly care for their crops.
 ### Coming Soon: My Gardens
 
 Expanding on the Plant Directory, this feature allows users to group and organize crops within multiple beds and gardens. This grouping allows users to digitally map out their actual gardens, and from these groups, the users can quickly find information on the plants that they are growing.
-
-<!-- d. Where your tests are and how to run them -->
 
 ---
 
