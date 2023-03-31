@@ -8,7 +8,7 @@ _Helping gardeners plan, plant, and tend their crops for a thriving garden._
 
 <!-- b. Describe what your website does -->
 
-The Garden Good app helps beginning gardeners and experienced gardeners plan, plant, and tend their crops for an abudant harvest. This app incorporates weather alerts to help you protect your garden from harsh conditions, and allow it to thrive. From proper feeding and watering to pruning and pests, this app will help you garden GOOD.
+The Garden Good app helps beginner and experienced gardeners plan, plant, and tend their crops for an abudant harvest. This app incorporates weather alerts to help you protect your garden from harsh conditions, and allow it to thrive. From proper feeding and watering to pruning, this app will help you garden GOOD.
 
 I created the simplest form of this application during my time in Springboard's Software Engineering Bootcamp, but it is an ongoing project with more features planned. This first iteration allows users to search for plants and find information on how to take care of the plants in their garden. When a user signs up or logs in, the current weather conditions for their zip code is displayed in the top of the app. The users also have the ability to update their account information.
 
@@ -17,28 +17,53 @@ Live link: https://gardengood.surge.sh/
 ---
 
 <!-- c. List the features you implemented and explain why you chose those features to implement -->
+
+## Features
+
+### Plant Directory
+
+The backbone of this app is the plant directory. Users can find information on the plants they want to grow in their garden.
+
+### Current Weather
+
+Weather conditions are important for gardeners to properly care for their crops. So at all times, the current weather is displayed for the user to determine if the plants need extra attention based on weather conditions.
+
+### Coming Soon: My Gardens
+
+Expanding on the Plant Directory, this feature allows users to group and organize crops within multiple beds and gardens. This grouping allows users to digitally map out their actual gardens, and from these groups, the users can quickly find information on the plants that they are growing.
+
 <!-- d. Where your tests are and how to run them -->
-<!-- e. Walk someone through the standard user flow for the website -->
 
-## Standard User FLow
+---
 
-<!-- f. Keep the API in there, and if you have anything to say about the API then add some notes. If you have created your own API, please document the process. -->
+## Standard User Flow
+
+1. A user logs into the app and lands on the home page where the current weather for the user's location is displayed.
+2. After navigating to the 'Plants' page, where there is a large grid of plants.
+3. The user can type into the search bar to filter plants by name.
+4. When the user clicks their desired plant, plant care information is displayed.
 
 ---
 
 ## Weather API
 
+The Weather API uses a user's zip code to provide current weather data to the user upon login.  
 https://www.weatherapi.com/
 
 ---
 
-<!-- g. Identify the technology stack used to create your website -->
-
 ## Technology Stack
 
----
+This app was built in the PERN Stack.
 
-<!-- h. Include anything else that you feel is important to share -->
+- PostgreSQL
+- Express
+- React
+- Node
+
+The app was styled with vanilla CSS with a mobile-first responsive design approach. No UI frameworks were used.
+
+---
 
 ## Cloning this Project
 
@@ -76,9 +101,3 @@ While in the 'gardengood-frontend' root directory, run the command `npm start`.
 This command will open the application front-end in development mode under port `3000`.
 
 Open http://localhost:3000 to view application in your browser.
-
----
-
-## Database Schema
-
-![database schema](./Proposal/img/GardenGood_db-schema.png)
